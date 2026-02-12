@@ -87,7 +87,7 @@ export default function Hero() {
 
       {/* Main Content */}
       <motion.div
-        className="relative z-10 text-center px-4"
+        className="relative z-10 text-center px-4 pt-24 md:pt-32"
         variants={containerVariants}
         initial="hidden"
         animate={isLoaded ? 'visible' : 'hidden'}
