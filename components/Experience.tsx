@@ -5,7 +5,8 @@ import { useRef, useState } from 'react';
 export default function Experience() {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true });
-  const [activeTab, setActiveTab] = useState('work');
+  type TabKey = 'work' | 'projects';
+  const [activeTab, setActiveTab] = useState<TabKey>('work');
 
   const tabs = [
     { id: 'work', label: 'WORK EXPERIENCE', icon: '💼' },
