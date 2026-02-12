@@ -77,7 +77,7 @@ export default function Labs() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-5xl md:text-7xl font-display font-black mb-4 neon-text">
-            &#60;LABS /&#62;
+            LABS
           </h2>
           <div className="w-32 h-1 mb-4" style={{ backgroundColor: 'var(--cyber-primary)' }} />
           <p className="text-lg font-mono mb-12" style={{ color: 'var(--cyber-primary)', opacity: 0.7 }}>

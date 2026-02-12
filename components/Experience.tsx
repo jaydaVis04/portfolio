@@ -114,7 +114,7 @@ export default function Experience() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-5xl md:text-7xl font-display font-black mb-4 neon-text">
-            &#60;EXPERIENCE /&#62;
+            EXPERIENCE
           </h2>
           <div
             className="w-32 h-1 mb-12"

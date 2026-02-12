@@ -57,7 +57,7 @@ export default function Contact() {
           transition={{ duration: 0.6 }}
         >
           <h2 className="text-5xl md:text-7xl font-display font-black mb-4 neon-text">
-            &#60;CONTACT /&#62;
+            CONTACT
           </h2>
           <div className="w-32 h-1 mb-12" style={{ backgroundColor: 'var(--cyber-primary)' }} />
         </motion.div>

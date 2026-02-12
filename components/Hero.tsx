@@ -92,17 +92,6 @@ export default function Hero() {
         initial="hidden"
         animate={isLoaded ? 'visible' : 'hidden'}
       >
-        <motion.div variants={itemVariants} className="mb-6">
-          <div
-            className="inline-block px-4 py-2 border rounded-full mb-4"
-            style={{ borderColor: 'var(--cyber-primary)', opacity: 0.5 }}
-          >
-            <span className="text-sm font-mono" style={{ color: 'var(--cyber-primary-light)' }}>
-              &#60;SYSTEM ONLINE /&#62;
-            </span>
-          </div>
-        </motion.div>
-
         <motion.h1
           variants={itemVariants}
           className="text-7xl md:text-9xl font-display font-black mb-4 relative"
@@ -192,28 +181,9 @@ export default function Hero() {
             <svg className="w-8 h-8" fill="currentColor" viewBox="0 0 24 24">
               <path d="M19 0h-14c-2.761 0-5 2.239-5 5v14c0 2.761 2.239 5 5 5h14c2.762 0 5-2.239 5-5v-14c0-2.761-2.238-5-5-5zm-11 19h-3v-11h3v11zm-1.5-12.268c-.966 0-1.75-.79-1.75-1.764s.784-1.764 1.75-1.764 1.75.79 1.75 1.764-.783 1.764-1.75 1.764zm13.5 12.268h-3v-5.604c0-3.368-4-3.113-4 0v5.604h-3v-11h3v1.765c1.396-2.586 7-2.777 7 2.476v6.759z"/>
             </svg>
-          </a>
-        </motion.div>
+        </a>
       </motion.div>
-
-      {/* Scroll Indicator */}
-      <motion.div
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-        animate={{ y: [0, 10, 0] }}
-        transition={{ duration: 2, repeat: Infinity }}
-      >
-        <div
-          className="w-6 h-10 border-2 rounded-full flex justify-center p-2"
-          style={{ borderColor: 'var(--cyber-primary)' }}
-        >
-          <motion.div
-            className="w-1 h-3 rounded-full"
-            style={{ backgroundColor: 'var(--cyber-primary)' }}
-            animate={{ y: [0, 12, 0] }}
-            transition={{ duration: 2, repeat: Infinity }}
-          />
-        </div>
-      </motion.div>
-    </section>
+    </motion.div>
+  </section>
   );
 }

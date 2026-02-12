@@ -24,7 +24,7 @@ export default function Projects() {
     <section id="projects" ref={ref} className="relative py-32 px-4">
       <div className="max-w-7xl mx-auto">
         <motion.div initial={{ opacity: 0, y: 50 }} animate={isInView ? { opacity: 1, y: 0 } : {}} transition={{ duration: 0.6 }}>
-          <h2 className="text-5xl md:text-7xl font-display font-black mb-4 neon-text">&#60;PROJECTS /&#62;</h2>
+          <h2 className="text-5xl md:text-7xl font-display font-black mb-4 neon-text"></h2>
           <div className="w-32 h-1 mb-12" style={{ backgroundColor: 'var(--cyber-primary)' }} />
         </motion.div>
 
